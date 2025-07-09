@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,9 @@
       color: #2c3e50;
       overflow-x: hidden;
     }
-    header, .hero-section, .features, .products, .gallery, .quote, .footer { padding: 20px; }
+    header, .hero-section, .features, .products, .gallery, .quote, .footer {
+      padding: 20px;
+    }
     header {
       display: flex;
       align-items: center;
@@ -26,7 +29,10 @@
       flex-wrap: wrap;
     }
     header img { height: 60px; }
-    .title-container { text-align: center; flex-grow: 1; }
+    .title-container {
+      text-align: center;
+      flex-grow: 1;
+    }
     .title-container h2 {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
@@ -40,7 +46,7 @@
       color: #8e44ad;
     }
     .hero-section {
-      background: url('https://i.ibb.co/zPJvZL9/homeo1.jpg') center/cover no-repeat;
+      background: url('https://cdn.pixabay.com/photo/2016/03/27/17/40/homeopathy-1288513_1280.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 60px 20px;
@@ -76,23 +82,26 @@
       text-align: center;
     }
     .footer a { color: #f1c40f; text-decoration: none; }
+    @media (min-width: 768px) {
+      .features { flex-direction: row; justify-content: space-around; }
+      .feature { width: 30%; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://github.com/pavanmodukuru369/Homeo_Stores/blob/main/3038007-Picsart-BackgroundChanger.jpg" alt="Lord Venkateswara" />
+    <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/logo.jpg" alt="Clinic Logo" />
     <div class="title-container">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/venkateswara.jpg" alt="Lord Venkateswara" style="height: 40px; margin-bottom: 5px;" />
       <h2>SRI VENKATESWARA HOMEO CLINIC & STORES</h2>
       <h1>శ్రీ వెంకటేశ్వర హోమియో క్లినిక్ & స్టోర్స్</h1>
     </div>
-    <img src="https://github.com/pavanmodukuru369/Homeo_Stores/blob/main/HAHNEMANN.jpg" alt="Dr. Hahnemann" />
+    <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/HAHNEMANN.jpg" alt="Dr. Hahnemann" />
   </header>
-
   <div class="hero-section">
     <h3>Experienced Homeopathy Practitioner</h3>
     <p>Dr. M. Venkata Hanumantha Rao offers compassionate care and accurate diagnosis through in-depth consultations with 20+ years of expertise.</p>
   </div>
-
   <div class="features">
     <div class="feature">
       <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Consultation">
@@ -110,28 +119,32 @@
       <p>Focus on root cause with the body's own healing response through holistic therapy.</p>
     </div>
   </div>
-
   <div class="products">
     <h3>Our Products</h3>
     <div class="product-container">
-      <img src="https://i.ibb.co/vZ2cVjx/pills.jpg" alt="Product"><img src="https://i.ibb.co/nM0mwn9/tablets.jpg" alt="Product"><img src="https://i.ibb.co/nQJbdBd/dilutions.jpg" alt="Product"><img src="https://i.ibb.co/vdv04zt/ointments.jpg" alt="Product"><img src="https://i.ibb.co/wdV8YvM/drops.jpg" alt="Product">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/pills.jpg" alt="Pills">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/tablests.jpg" alt="Tablets">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/dilutions.jpg" alt="Dilutions">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/ointments.jpg" alt="Ointments">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/drops.jpg" alt="Drops">
     </div>
   </div>
-
   <div class="gallery">
     <h3>Gallery</h3>
     <div class="gallery-container">
-      <img src="https://i.ibb.co/zPJvZL9/homeo1.jpg" alt="Gallery Image"><img src="https://i.ibb.co/pzrdM50/homeo2.jpg" alt="Gallery Image"><img src="https://i.ibb.co/hZfv4JW/homeo3.jpg" alt="Gallery Image"><img src="https://i.ibb.co/TB2tL9X/homeo4.jpg" alt="Gallery Image"><img src="https://i.ibb.co/bHH0Fbt/homeo5.jpg" alt="Gallery Image">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/gallary1.jpg" alt="Gallery Image">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/gallary2.jpg" alt="Gallery Image">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/gallary3.jpg" alt="Gallery Image">
+      <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/gallary4.jpg" alt="Gallery Image">
     </div>
   </div>
-
   <div class="quote">
-    <img src="https://i.ibb.co/m54djcf/hahnemann.jpg" alt="Dr. Hahnemann">
+    <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/HAHNEMANN.jpg" alt="Dr. Hahnemann">
     <p>"The physician's highest calling, his only calling, is to make sick people healthy - to heal, as it is termed."</p>
     <p>- Dr. Samuel Hahnemann</p>
   </div>
-
   <div class="footer">
+    <img src="https://raw.githubusercontent.com/pavanmodukuru369/Homeo_Stores/main/logo.jpg" alt="Clinic Logo" style="height: 80px; margin-bottom: 10px;" />
     <p><strong>Practitioner:</strong> Dr. M. Venkata Hanumantha Rao</p>
     <p><strong>Address:</strong> Santha Bazar, Beside Post office, Cherukupalli, Bapatla, Andhra Pradesh, 522309</p>
     <p><a href="https://maps.app.goo.gl/ssQVcWAC1WkatssH7" target="_blank">📍 View on Google Maps</a></p>

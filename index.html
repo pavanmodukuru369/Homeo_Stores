@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,9 +15,7 @@
       color: #2c3e50;
       overflow-x: hidden;
     }
-    header, .hero-section, .features, .products, .gallery, .quote, .footer {
-      padding: 20px;
-    }
+    header, .hero-section, .features, .products, .gallery, .quote, .footer { padding: 20px; }
     header {
       display: flex;
       align-items: center;
@@ -29,10 +26,7 @@
       flex-wrap: wrap;
     }
     header img { height: 60px; }
-    .title-container {
-      text-align: center;
-      flex-grow: 1;
-    }
+    .title-container { text-align: center; flex-grow: 1; }
     .title-container h2 {
       font-family: 'Playfair Display', serif;
       font-size: 24px;
@@ -46,7 +40,7 @@
       color: #8e44ad;
     }
     .hero-section {
-      background: url('https://images.unsplash.com/photo-1588776814546-ecdb7f7089c7') center/cover no-repeat;
+      background: url('https://i.ibb.co/zPJvZL9/homeo1.jpg') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 60px 20px;
@@ -82,21 +76,16 @@
       text-align: center;
     }
     .footer a { color: #f1c40f; text-decoration: none; }
-    @media (min-width: 768px) {
-      .features { flex-direction: row; justify-content: space-around; }
-      .feature { width: 30%; }
-    }
   </style>
 </head>
-
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Venkateswara_Tirumala_2016.jpg/800px-Venkateswara_Tirumala_2016.jpg" alt="Lord Venkateswara" />
+    <img src="https://i.ibb.co/tpWDDxK/venkateswara.jpg" alt="Lord Venkateswara" />
     <div class="title-container">
       <h2>SRI VENKATESWARA HOMEO CLINIC & STORES</h2>
       <h1>శ్రీ వెంకటేశ్వర హోమియో క్లినిక్ & స్టోర్స్</h1>
     </div>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Samuel_Hahnemann.jpg/640px-Samuel_Hahnemann.jpg" alt="Dr. Hahnemann" />
+    <img src="https://i.ibb.co/m54djcf/hahnemann.jpg" alt="Dr. Hahnemann" />
   </header>
 
   <div class="hero-section">
@@ -125,21 +114,19 @@
   <div class="products">
     <h3>Our Products</h3>
     <div class="product-container">
-      <img src="https://cdn.pixabay.com/photo/2021/07/28/04/45/homeopathy-6499196_1280.jpg" alt="Pills">
-      <img src="https://www.biogetica.com/wp-content/uploads/2020/08/Homeopathy.jpg" alt="Tablets">
-      <img src="https://5.imimg.com/data5/SELLER/Default/2021/6/MU/KN/KP/49754782/mother-tinctures.jpg" alt="Dilutions">
-      <img src="https://www.indianetzone.com/photos_gallery/82/Homeopathy-Ointment.jpg" alt="Ointments">
-      <img src="https://ayushnext.ayush.gov.in/uploads/2022-07-11-62ccf78ce0ad4.png" alt="Drops">
+      <img src="https://i.ibb.co/vZ2cVjx/pills.jpg" alt="Product"><img src="https://i.ibb.co/nM0mwn9/tablets.jpg" alt="Product"><img src="https://i.ibb.co/nQJbdBd/dilutions.jpg" alt="Product"><img src="https://i.ibb.co/vdv04zt/ointments.jpg" alt="Product"><img src="https://i.ibb.co/wdV8YvM/drops.jpg" alt="Product">
     </div>
   </div>
 
   <div class="gallery">
     <h3>Gallery</h3>
-    <div class="gallery-container" id="galleryImages"></div>
+    <div class="gallery-container">
+      <img src="https://i.ibb.co/zPJvZL9/homeo1.jpg" alt="Gallery Image"><img src="https://i.ibb.co/pzrdM50/homeo2.jpg" alt="Gallery Image"><img src="https://i.ibb.co/hZfv4JW/homeo3.jpg" alt="Gallery Image"><img src="https://i.ibb.co/TB2tL9X/homeo4.jpg" alt="Gallery Image"><img src="https://i.ibb.co/bHH0Fbt/homeo5.jpg" alt="Gallery Image">
+    </div>
   </div>
 
   <div class="quote">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Samuel_Hahnemann.jpg/640px-Samuel_Hahnemann.jpg" alt="Dr. Hahnemann">
+    <img src="https://i.ibb.co/m54djcf/hahnemann.jpg" alt="Dr. Hahnemann">
     <p>"The physician's highest calling, his only calling, is to make sick people healthy - to heal, as it is termed."</p>
     <p>- Dr. Samuel Hahnemann</p>
   </div>
@@ -150,36 +137,5 @@
     <p><a href="https://maps.app.goo.gl/ssQVcWAC1WkatssH7" target="_blank">📍 View on Google Maps</a></p>
     <p><strong>Contact:</strong> 9392338256</p>
   </div>
-
-  <script>
-    const container = document.getElementById('galleryImages');
-    let images = [];
-
-    try {
-      const stored = localStorage.getItem('homeoGallery');
-      if (stored) {
-        images = JSON.parse(stored);
-      }
-    } catch (e) {
-      console.warn("Could not access localStorage", e);
-    }
-
-    if (!images.length) {
-      images = [
-        "https://www.homeopathy360.com/wp-content/uploads/2019/07/homeopathy-pills.jpg",
-        "https://5.imimg.com/data5/ANDROID/Default/2021/5/YB/GI/RM/120510551/product-jpeg.jpg",
-        "https://ayushnext.ayush.gov.in/uploads/2022-07-11-62ccf78ce0ad4.png",
-        "https://images.indianexpress.com/2022/01/homeopathy_1200_getty.jpg",
-        "https://www.biogetica.com/wp-content/uploads/2020/08/Homeopathy.jpg"
-      ];
-    }
-
-    images.forEach(url => {
-      const img = document.createElement('img');
-      img.src = url;
-      img.alt = 'Gallery Image';
-      container.appendChild(img);
-    });
-  </script>
 </body>
 </html>
